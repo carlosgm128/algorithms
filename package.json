@@ -1,0 +1,22 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "algoriths learning courve",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "algotith",
+    "algo"
+  ],
+  "author": "Carlos Garcia",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
