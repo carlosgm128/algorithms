@@ -23,4 +23,5 @@ export function bSearch(payload: number[], key: number): number{
     return index;
 }
 
+
 export default bSearch;
