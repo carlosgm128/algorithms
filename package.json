@@ -16,7 +16,7 @@
   ],
   "author": "Carlos Garcia",
   "license": "MIT",
-  "devDependencies": {
-    "typescript": "^4.8.4"
+  "dependencies": {
+    "typescript": "^4.9.3"
   }
 }
