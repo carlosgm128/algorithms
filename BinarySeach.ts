@@ -1,27 +1,19 @@
-export function bSearch(payload: number[], key: number): number{
+export function binary_search(payload: number[], search_value: number): number{
     let start = 0;
     let end = payload.length - 1;
-    let middle;
-    let index = -1;
-    let steps = 1
-    for(let i = 0; i < payload.length; i++){
-        middle = Math.round(((end + start) / 2));
+    while(start <= end){
+        let middle = Math.round((end + start) / 2);
         let value_found = payload[middle];
-        if(value_found === key){
-            index = i;
-            console.log("number of Steps >>>", steps)
-            break;
+        if(search_value === value_found){
+            return middle;
         }
-        if(value_found > key){
-            start = middle + 1;
-        }
-        if(value_found < key){
+        if( search_value < value_found){
             end = middle - 1;
         }
-        steps++;
+        if(search_value > value_found){
+            start = middle + 1;
+        }
     }
-    return index;
+    return -1;
 }
-
-
-export default bSearch;
+export default binary_search;
